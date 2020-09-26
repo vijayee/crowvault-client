@@ -1,0 +1,21 @@
+{
+  "name": "crowvault-client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/test-profile.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bs58": "^4.0.1",
+    "mkdirp": "^1.0.4",
+    "node-forge": "^0.9.1",
+    "protocol-buffers": "^4.2.0",
+    "scryptsy": "^2.1.0"
+  },
+  "devDependencies": {
+    "tape": "^5.0.1"
+  }
+}

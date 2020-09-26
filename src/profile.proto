@@ -1,0 +1,41 @@
+message Profile {
+    //Public Account Key
+    required bytes publicKey=  1;
+    //Private Account Key
+    required bytes privateKey = 2;
+    //Epoch Times of Creation Date
+    optional int64 registrationDate = 3;
+}
+
+message Credentials {
+    optional bytes password = 1;
+    optional bytes file = 2;
+}
+
+message Login {
+    optional bytes salt = 1;
+    optional Credentials credentials= 2;
+    optional string question1= 3;
+    optional string question2= 4;
+    optional string question3= 5;
+    optional bytes qSalt1 = 6;
+    optional bytes qSalt2 = 7;
+    optional bytes qSalt3 = 8;
+    optional bytes qKenc1 = 9;
+    optional bytes qKenc2 = 10;
+    optional bytes qKenc3 = 11;
+    optional bytes qSenc1 = 12;
+    optional bytes qSenc2 = 13;
+    optional bytes qSenc3 = 14;
+    optional bytes deviceFile = 15;
+}
+
+message DeviceLogin {
+    optional bytes deviceFile = 1;
+    optional bytes deviceKey = 2;
+}
+
+message DeviceRecord {
+    optional bytes file = 1;
+    optional bytes password = 2;
+}
